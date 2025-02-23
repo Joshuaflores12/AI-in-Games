@@ -593,6 +593,9 @@ GameObject:
   - component: {fileID: 834034053}
   - component: {fileID: 834034052}
   - component: {fileID: 834034051}
+  - component: {fileID: 834034057}
+  - component: {fileID: 834034056}
+  - component: {fileID: 834034055}
   m_Layer: 6
   m_Name: NavMeshBaker (1)
   m_TagString: Untagged
@@ -690,6 +693,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834034055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834034049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b9c61ddc1faec48bb7b434b6d9d50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedForward: 1
+--- !u!208 &834034056
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834034049}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5, y: 0.00001, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!114 &834034057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834034049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 941fba1dff7a45b4badf3eee825c8546, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1077109712
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +858,7 @@ Transform:
   m_GameObject: {fileID: 1077109712}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83, y: 0.559, z: 5.536}
+  m_LocalPosition: {x: -3.09, y: 0.559, z: -8.06}
   m_LocalScale: {x: 2.3766, y: 1, z: 2.6578}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -826,7 +890,7 @@ NavMeshObstacle:
   m_Extents: {x: 0.5, y: 0.5, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!1 &1187720951
@@ -1260,9 +1324,9 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1187720956}
+  - {fileID: 1077109716}
   - {fileID: 204691391}
   - {fileID: 834034054}
-  - {fileID: 1077109716}
   - {fileID: 1569733837}
   - {fileID: 1595175790}
   - {fileID: 1588623563}

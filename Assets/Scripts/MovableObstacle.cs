@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovableObstacle : MonoBehaviour
 {
-    [SerializeField] private float speedForward;
+      [SerializeField] private float speedForward;
     //[SerializeField] private float speedBackward;
 
     private bool isSwitchDir;
@@ -19,11 +19,11 @@ public class MovableObstacle : MonoBehaviour
             transform.Translate(Vector3.back * speedForward * Time.deltaTime);
         }
 
-        if (transform.position.z >= 8) 
+        if (transform.position.z >= 2) 
         {
             isSwitchDir = true;
         }
-        else if (transform.position.z <= -8) 
+        else if (transform.position.z <= -2) 
         {
             isSwitchDir= false;
         }
